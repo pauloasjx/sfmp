@@ -1,0 +1,23 @@
+[package]
+name = "sfmp"
+description = "Separate For Me Please"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+onnxruntime = { git = "https://github.com/haixuanTao/onnxruntime-rs", branch = "owned_environment" }
+opencv = { version = "0.68", default-features = false, features = [
+    "imgproc",
+    "imgcodecs",
+] }
+linfa = "0.6.0"
+linfa-clustering = "0.6.0"
+linfa-nn = "0.6.0"
+rand_xoshiro = "0.6.0"
+indicatif = "0.17.1"
+clap = { version = "3.2.23", features = ["derive"] }
+
+[profile.release]
+strip = true
+lto = true
+panic = 'abort'
