@@ -3,7 +3,24 @@
 Quickly separate images using clustering based on features extracted through a convolutional neural network.
 
 ```
-$ stmp [FOLDER]
+sfmp 0.1.0
+Separate For Me Please
+
+USAGE:
+    sfmp [OPTIONS] <PATH>
+
+ARGS:
+    <PATH>
+
+OPTIONS:
+    -f, --features <FEATURES>                    [default: 512]
+    -h, --help                                   Print help information
+    -i, --input-size <INPUT_SIZE>                [default: 224]
+    -m, --max-n-iterations <MAX_N_ITERATIONS>    [default: 300]
+    -m, --move-images
+    -n, --num-clusters <NUM_CLUSTERS>            [default: 2]
+    -t, --tolerance <TOLERANCE>                  [default: 0.0001]
+    -V, --version                                Print version information
 ```
 
 ### Example
